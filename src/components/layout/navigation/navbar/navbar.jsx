@@ -13,6 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import AboutSection from '../../sections/about.jsx';
+import ContactSection from '../../sections/contact.jsx';
+import ProjectSection from '../../sections/projects.jsx';
+import SkillSection from '../../sections/skills.jsx';
 
 const pages = ['About', 'Skills', 'Projects', 'Contact'];
 

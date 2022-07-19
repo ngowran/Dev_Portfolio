@@ -45,7 +45,7 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} />
+          <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} /> 
           <BottomNavigationAction label="linkedin" icon={<LinkedInIcon />} />
           <BottomNavigationAction label="CV" icon={<FeedIcon />} />
         </BottomNavigation>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ResponsiveAppBar from './components/layout/navigation/navbar/navbar.jsx';
-import FixedBottomNavigation from './components/layout/navigation/footer/footer.jsx'
+import FixedBottomNavigation from './components/layout/navigation/footer/footer.jsx';
 
 function App() {
 
