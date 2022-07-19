@@ -12,6 +12,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FeedIcon from '@mui/icons-material/Feed';
 
 
 export default function FixedBottomNavigation() {
@@ -24,7 +27,7 @@ export default function FixedBottomNavigation() {
     <Box sx={{ pb: 7 }} ref={ref}>
       <CssBaseline />
      
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, bgcolor: 'primary  ' }} elevation={3}>
         <BottomNavigation
           showLabels
           value={value}
@@ -32,9 +35,9 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+          <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} />
+          <BottomNavigationAction label="linkedin" icon={<LinkedInIcon />} />
+          <BottomNavigationAction label="CV" icon={<FeedIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>
