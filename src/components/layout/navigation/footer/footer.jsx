@@ -15,19 +15,29 @@ import Avatar from '@mui/material/Avatar';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FeedIcon from '@mui/icons-material/Feed';
+import { createTheme } from '@mui/material/styles';
+import { purple } from '@mui/material/colors';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: purple[500],
+    },
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
 
 export default function FixedBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const ref = React.useRef(null);
-
-
-
+  
   return (
     <Box sx={{ pb: 7 }} ref={ref}>
       <CssBaseline />
      
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, bgcolor: 'primary  ' }} elevation={3}>
+      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, bgcolor: 'purple'}} elevation={3}>
         <BottomNavigation
           showLabels
           value={value}
