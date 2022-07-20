@@ -3,9 +3,9 @@ import * as React from 'react';
 const ContactSection = () => {
 
     return (
-      <main>
+      <section id="Contact">
       <p>Contact</p>
-        </main>
+        </section>
     );
 };
 

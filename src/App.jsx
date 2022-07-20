@@ -6,6 +6,7 @@ import AboutSection from './components/layout/sections/about.jsx';
 import ContactSection from './components/layout/sections/contact.jsx';
 import ProjectSection from './components/layout/sections/projects.jsx';
 import SkillSection from './components/layout/sections/skills.jsx';
+import HeroSection from './components/layout/sections/hero.jsx';
 
 function App() {
 
@@ -15,11 +16,11 @@ function App() {
       <ResponsiveAppBar> </ResponsiveAppBar>
 
       <main>
-        <p>Niamhs Dev Portfolio</p>
-        <AboutSection id="About"></AboutSection>
-        <SkillSection id="Skill"></SkillSection>
-        <ProjectSection id="Project"></ProjectSection>
-        <ContactSection id="Contact"></ContactSection>
+        <HeroSection/>
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        <ContactSection />
         
       </main>
     

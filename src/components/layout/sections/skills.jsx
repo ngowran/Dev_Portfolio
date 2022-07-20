@@ -3,9 +3,9 @@ import * as React from 'react';
 const SkillSection = () => {
 
     return (
-      <main>
+      <section id="Skills">
       <p>Skill</p>
-        </main>
+        </section>
     );
 };
 

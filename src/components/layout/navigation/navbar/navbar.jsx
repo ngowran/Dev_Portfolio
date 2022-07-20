@@ -17,6 +17,7 @@ import AboutSection from '../../sections/about.jsx';
 import ContactSection from '../../sections/contact.jsx';
 import ProjectSection from '../../sections/projects.jsx';
 import SkillSection from '../../sections/skills.jsx';
+import Link from '@mui/material/Link';
 
 const pages = ['About', 'Skills', 'Projects', 'Contact'];
 
@@ -49,7 +50,7 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#Hero"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -94,7 +95,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center"><Link  sx={{color: 'black', display: 'block', textDecoration: 'none', }}  href={ `#${page}` }>{page}</Link></Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -104,7 +105,7 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="#Hero"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -120,20 +121,18 @@ const ResponsiveAppBar = () => {
             Niamh Gowran
             
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
+                sx={{ my: 2, color: 'white', display: 'block', textDecoration: 'none', }} 
+                >
+                <Link  sx={{ my: 2, color: 'white', display: 'block', textDecoration: 'none', }}  href={ `#${page}` }>{page}</Link>
               </Button>
             ))}
           </Box>
-
           <Avatar alt="Niamh Gowran" src="src/assets/images/Selfimage.jpg" />          
-          
         </Toolbar>
       </Container>
     </AppBar>

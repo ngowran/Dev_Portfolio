@@ -6,12 +6,11 @@ const AboutSection = () => {
 
     return (
 
-      <main>
+      <section id="About">
       <p>About me</p>
-        </main>
+        </section>
      
     );
 };
-
 
 export default AboutSection;

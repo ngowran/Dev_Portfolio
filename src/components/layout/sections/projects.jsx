@@ -4,9 +4,9 @@ const ProjectSection = () => {
 
     return (
 
-      <main>
+      <section id="Projects">
       <p>Project</p>
-        </main>
+        </section>
     );
 };
 
