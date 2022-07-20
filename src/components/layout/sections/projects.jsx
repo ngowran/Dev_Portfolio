@@ -3,7 +3,10 @@ import * as React from 'react';
 const ProjectSection = () => {
 
     return (
-      <H1>YAS</H1>
+
+      <main>
+      <p>Project</p>
+        </main>
     );
 };
 

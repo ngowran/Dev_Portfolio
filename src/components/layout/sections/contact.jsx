@@ -3,7 +3,9 @@ import * as React from 'react';
 const ContactSection = () => {
 
     return (
-      <H1>YAS</H1>
+      <main>
+      <p>Contact</p>
+        </main>
     );
 };
 

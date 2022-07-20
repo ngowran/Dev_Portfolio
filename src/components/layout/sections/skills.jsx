@@ -3,7 +3,9 @@ import * as React from 'react';
 const SkillSection = () => {
 
     return (
-      <H1>YAS</H1>
+      <main>
+      <p>Skill</p>
+        </main>
     );
 };
 
