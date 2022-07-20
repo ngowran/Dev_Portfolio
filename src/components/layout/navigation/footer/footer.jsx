@@ -45,8 +45,8 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} /> 
-          <BottomNavigationAction label="linkedin" icon={<LinkedInIcon />} />
+         <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/ngowran" target="blank"/> 
+          <BottomNavigationAction label="linkedin" icon={<LinkedInIcon />} href="https://ie.linkedin.com/in/niamh-gowran-6b3b24221?original_referer=https%3A%2F%2Fwww.google.com%2F" target="blank"/>
           <BottomNavigationAction label="CV" icon={<FeedIcon />} />
         </BottomNavigation>
       </Paper>
